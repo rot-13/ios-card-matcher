@@ -7,7 +7,6 @@
 //
 
 #import "CMHViewController.h"
-#import <opencv2/highgui/cap_ios.h>
 #include "Video Source/VideoSource.h"
 
 
@@ -57,6 +56,12 @@
     
     // Construct UIImage from CGImageRef
     UIImage * image = [UIImage imageWithCGImage:newImage];
+    NSBundle* myBundle = [NSBundle mainBundle];
+    NSString* myImage = [myBundle pathForResource:@"clusters/agenda/haas-bioroid/01055" ofType:@"png"];
+    NSLog(@"%@", myImage);
+    image = [UIImage imageWithContentsOfFile:myImage];
+    NSLog(@"%f %f", image.size.width, image.size.height);
+    
     CGImageRelease(newImage);
     [[_weakSelf mImageView] setImage:image];
   });

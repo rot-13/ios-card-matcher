@@ -16,6 +16,7 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+opencv2.framework
 
 # CocoaPods
 #

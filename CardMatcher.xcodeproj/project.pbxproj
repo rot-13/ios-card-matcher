@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6641B69E1A013AC000557E30 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6641B69D1A013AC000557E30 /* opencv2.framework */; };
+		66CBDEA11A0142040058CF27 /* clusters in Resources */ = {isa = PBXBuildFile; fileRef = 66CBDEA01A0142040058CF27 /* clusters */; };
+		66CBDEA41A0143AC0058CF27 /* match_cards.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66CBDEA21A0143AC0058CF27 /* match_cards.cpp */; };
 		943A6A1F19DC3901008E6AAF /* VideoSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = 943A6A1E19DC3901008E6AAF /* VideoSource.mm */; };
 		943A6A2619DC40A6008E6AAF /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 943A6A2519DC40A6008E6AAF /* UIImage+OpenCV.mm */; };
-		943A6A2819DC442E008E6AAF /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943A6A2719DC442E008E6AAF /* opencv2.framework */; };
 		943A6A2C19DC46A6008E6AAF /* CMHMatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 943A6A2A19DC46A6008E6AAF /* CMHMatch.cpp */; };
 		94D1890C19C9C97A0029C941 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D1890B19C9C97A0029C941 /* Foundation.framework */; };
 		94D1890E19C9C97A0029C941 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D1890D19C9C97A0029C941 /* CoreGraphics.framework */; };
@@ -47,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6641B69D1A013AC000557E30 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		66CBDEA01A0142040058CF27 /* clusters */ = {isa = PBXFileReference; lastKnownFileType = folder; path = clusters; sourceTree = "<group>"; };
+		66CBDEA21A0143AC0058CF27 /* match_cards.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = match_cards.cpp; path = Engine/match_cards.cpp; sourceTree = "<group>"; };
+		66CBDEA31A0143AC0058CF27 /* match_cards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = match_cards.h; path = Engine/match_cards.h; sourceTree = "<group>"; };
 		943A6A1B19DC3901008E6AAF /* CameraCalibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCalibration.h; sourceTree = "<group>"; };
 		943A6A1C19DC3901008E6AAF /* VideoFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoFrame.h; sourceTree = "<group>"; };
 		943A6A1D19DC3901008E6AAF /* VideoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoSource.h; sourceTree = "<group>"; };
@@ -93,8 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6641B69E1A013AC000557E30 /* opencv2.framework in Frameworks */,
 				94D1895419C9CD410029C941 /* libstdc++.dylib in Frameworks */,
-				943A6A2819DC442E008E6AAF /* opencv2.framework in Frameworks */,
 				94D1895219C9CC1E0029C941 /* QuartzCore.framework in Frameworks */,
 				94D1895019C9CC160029C941 /* CoreVideo.framework in Frameworks */,
 				94D1894E19C9CC0F0029C941 /* CoreMedia.framework in Frameworks */,
@@ -135,6 +141,8 @@
 		943A6A2919DC4678008E6AAF /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				66CBDEA21A0143AC0058CF27 /* match_cards.cpp */,
+				66CBDEA31A0143AC0058CF27 /* match_cards.h */,
 				943A6A2A19DC46A6008E6AAF /* CMHMatch.cpp */,
 				943A6A2B19DC46A6008E6AAF /* CMHMatch.h */,
 			);
@@ -164,6 +172,7 @@
 		94D1890A19C9C97A0029C941 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6641B69D1A013AC000557E30 /* opencv2.framework */,
 				943A6A2719DC442E008E6AAF /* opencv2.framework */,
 				94D1895319C9CD410029C941 /* libstdc++.dylib */,
 				94D1895119C9CC1E0029C941 /* QuartzCore.framework */,
@@ -185,6 +194,7 @@
 		94D1891119C9C97A0029C941 /* CardMatcher */ = {
 			isa = PBXGroup;
 			children = (
+				66CBDEA01A0142040058CF27 /* clusters */,
 				943A6A2919DC4678008E6AAF /* Engine */,
 				943A6A1A19DC3901008E6AAF /* Video Source */,
 				94D1891A19C9C97A0029C941 /* CMHAppDelegate.h */,
@@ -315,6 +325,7 @@
 				94D1892219C9C97A0029C941 /* Main_iPad.storyboard in Resources */,
 				94D1892719C9C97A0029C941 /* Images.xcassets in Resources */,
 				94D1891F19C9C97A0029C941 /* Main_iPhone.storyboard in Resources */,
+				66CBDEA11A0142040058CF27 /* clusters in Resources */,
 				94D1891619C9C97A0029C941 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +380,7 @@
 			files = (
 				94D1892519C9C97A0029C941 /* CMHViewController.m in Sources */,
 				943A6A2619DC40A6008E6AAF /* UIImage+OpenCV.mm in Sources */,
+				66CBDEA41A0143AC0058CF27 /* match_cards.cpp in Sources */,
 				943A6A2C19DC46A6008E6AAF /* CMHMatch.cpp in Sources */,
 				94D1891819C9C97A0029C941 /* main.m in Sources */,
 				943A6A1F19DC3901008E6AAF /* VideoSource.mm in Sources */,
