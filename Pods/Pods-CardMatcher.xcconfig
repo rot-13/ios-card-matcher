@@ -1,0 +1,5 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers"
+OTHER_LDFLAGS = -ObjC -lstdc++ -framework AVFoundation -framework Accelerate -framework AssetsLibrary -framework CoreGraphics -framework CoreImage -framework CoreMedia -framework CoreVideo -framework Foundation -framework QuartzCore -framework UIKit -framework opencv2
+PODS_ROOT = ${SRCROOT}/Pods
